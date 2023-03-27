@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <title>SweCar</title>
+</head>
+<body>
+    <header>
+    <div class="top" id="navbar">
+        <a href="index.html"><img src="assets/img/logo.png" class="logo"></a>
+        <nav>
+            <ul>
+            <li><a href="#about"><span class="material-icons">info</span><span class="link">O nas</span></a></li>
+            <li><a href="#cars"><span class="material-icons">check_circle</span><span class="link">Samochody</span></a></li>
+            <li><a href="#contact"><span class="material-icons">chat</span><span class="link">Kontakt</span></a></li>
+            </ul>
+        </nav>
+        <span class="number"><div class="z">+48 123 456 789</div></span>
+    </div>
+     <h1>Samochody ze Szwecji</h1>
+    </header>
+    <div class="site-container">
+    <section class="top-center" id="about">
+        <h2>"W SweCar znajdziemy dla Ciebie wymarzony samochód, który posłuży przez lata - od pasjonatów dla pasjonatów"</h2>
+    </section>
+    <section class="bottom-center">
+        <div class="center-left">
+            <img src="assets/img/middle_1.jpg" class="image-hover">
+            <h2>Szukamy</h2>
+            <span>Specjalnie na twoje zamówienie znajdziemy twój wymarzony samoochód, auto na codzień czy weekendową zabawkę</span> 
+        </div>
+        <div class="center-center"> 
+            <div class="stripe"><span class="material-icons">chevron_right</span></div>
+            <h2>Kupujemy</h2>
+            <span>Po uzgodnieniu z klientem wybranych kryterii poszukiwanego samochodu przystępujemy do znalezienia oraz kupna</span> 
+        </div>
+        <div class="center-right">
+            <img src="assets/img/middle_2.jpg" class="image-hover">
+            <h2>Dostarczamy</h2>
+            <span>Na koniec klient po ustaleniach czy dany samochód spełnia oczekiwania czeka na samochód, który zostanie dostarczony pod drzwi</span>
+        </div>
+    </section>
+    </div>
+    <section class="center">
+        <div class="site-container">
+        <h2>O nas</h2>
+        <p>W SweCar pracują sami pasjonaci motoryzacji, którzy chcą sprostać wyzwanią nawet najbardziej wymagającym klientom poszukujących samochodów na codzień czy zabawek na weekendowy wyjazd z garażu. Z nami droga od wybrania do kupienia samochodu będzie bardzo przyjemna i bezstresowa. </p>
+        </div>
+    </section>
+    <div class="site-container">
+    <section class="cars" id="cars">
+        <h2>Aktualne samochody</h2>
+        <div class="gallery">
+            <div class="container">
+                <img src="assets/img/typer.jpg" class="img-gallery">
+                <div class="car-info">
+                    <span>Civic Type R</span>
+                    <span>170 000km</span>
+                    <span>2008</span>
+                </div>
+            </div>
+            <div>
+            <div class="container">
+            <img src="assets/img/golfr.jpg" class="img-gallery">
+            <div class="car-info">
+                <span>Golf R Stage 1</span>
+                <span>150 000km</span>
+                <span>2012</span>
+            </div>
+            </div>
+            </div>
+            <div>
+            <div class="container">    
+                <img src="assets/img/a4.jpg" class="img-gallery">
+                <div class="car-info">
+                    <span>Audi A4 2.0 TDi</span>
+                    <span>120 000km</span>
+                    <span>2014</span>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <section class="contact" id="contact">
+        <div class="left-c">
+            <div class="blackout"></div>
+            <div class="contact-info">
+                <span class="material-icons">location_on</span> <p class="p">Adres</p> 
+                <p class="p-info">Kuryłowicza 19/2</p>    
+                <p class="p-info">Kraków 30-699</p>  
+            </div>
+            <div class="contact-info">
+                <span class="material-icons">call</span> <p class="p">Pogadajmy</p> 
+                <p class="p-info">123456789</p> 
+            </div>
+            <div class="contact-info">
+                <span class="material-icons">email</span> <p class="p">Mail</p> 
+                <p class="p-info">email@gmail.com</p> 
+            </div>
+        </div>
+        <div class="right-c">
+            <h2>Kontakt</h2>
+            <form class="form">
+                <label class="form__label" for="name">Imie*</label> <input class="form__input" type="text" id="name">
+                <label class="form__label" for="email">Email*</label> <input class="form__input" type="email" id="email">
+                <label class="form__label" for="number">Numer telefonu*</label> <input class="form__input" type="number" id="number">
+                <label class="form__label" for="subject">Temat*</label> <input class="form__input" type="text" id="subject">
+                <label class="form__label" for="message">Wiadomość*</label><textarea class="form__input--text" id="message" cols="15" rows="10"></textarea>
+                <input class="form__button" type="button" value="Wyślij">
+            </form>
+        </div>
+    </section>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

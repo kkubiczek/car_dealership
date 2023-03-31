@@ -366,8 +366,34 @@ h2 {
         font-size: 1.6rem;
         cursor: pointer;
         transition-duration: .5s;
+        margin-bottom: 3rem;
         &:hover {
             background-color: rgb(29, 29, 29);
+        }
+    }
+}
+.footer {
+    background-color: black;
+    
+    &-max {
+        height: 8vh;
+        color: white;
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    &-left {
+        text-align: left;
+        width: 50%;
+    }
+    &-right {
+        text-align: right;
+        width: 50%;
+        &--color {
+            font-weight: bold;
+            color: #abdbe3;
         }
     }
 }
@@ -487,6 +513,12 @@ h2 {
     .contact-info {
         padding-left: 17rem;
     }
+    .footer {
+        &-max {
+            max-width: 1424px;
+            margin: 0 auto;
+        }
+    }
 }
 @media screen and (max-width:1500px){
     nav {
@@ -495,6 +527,12 @@ h2 {
     .site-container {
         max-width: 1124px;
         margin: 0 auto
+    }
+    .footer {
+        &-max {
+            max-width: 1124px;
+            margin: 0 auto;
+        }
     }
 }
 @media screen and (max-width:1135px){
@@ -515,5 +553,11 @@ h2 {
     .site-container {
         max-width: 824px;
         margin: 0 auto
+    }
+    .footer {
+        &-max {
+            max-width: 824px;
+            margin: 0 auto;
+        }
     }
 }
